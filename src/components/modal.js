@@ -9,27 +9,28 @@ class Modal extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {
-            title: this.props.book.title,
-            author: this.props.book.author,
-            description: this.props.book.description,
-            published: this.props.book.published,
-            id: this.props.book.id
-        };
+        // this.state = {
+        //     title: this.props.book.title,
+        //     author: this.props.book.author,
+        //     description: this.props.book.description,
+        //     published: this.props.book.published,
+        //     id: this.props.book.id
+        // };
     }
 
     handleDelete = e=>{
-        e.preventDefault();
-        this.props.onDeleteBook(this.state.id);
+        this.props.onDeleteBook(this.props.book.id);
+        this.props.onHideModal();
+    };
+
+    submit = (values) => {
+        this.props.onUpdateBook(this.props.book.id, values);
         this.props.onHideModal();
     };
 
     render() {
         const {handleSubmit} = this.props;
-        const submit = (values) => {
-            this.props.onUpdateBook(this.state.id, values);
-            this.props.onHideModal();
-        };
+
         return (
             <div>
                 <div className={this.props.show ? "modal display-block" : "modal display-none"}>
@@ -58,14 +59,14 @@ class Modal extends React.Component {
                                 placeholder={this.props.book.description}
                             />
                             <Field
-                                name='publish'
+                                name='published'
                                 type='number'
                                 component={fieldComponent}
                                 label='Book Date published'
                                 placeholder={this.props.book.published}
                             />
                         </Form>
-                        <ButtonSubmit onClick={handleSubmit(submit)}>Edit</ButtonSubmit>
+                        <ButtonSubmit onClick={handleSubmit(this.submit)}>Edit</ButtonSubmit>
                         <ButtonDelete onClick={this.handleDelete}>Delete</ButtonDelete>
                         <ButtonClose onClick={this.props.onHideModal}>Close</ButtonClose>
                     </FormWrapper>

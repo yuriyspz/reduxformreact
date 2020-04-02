@@ -49,6 +49,7 @@ export const createBook = (book) => {
     }
 };
 export const updateBook = (id, data) => {
+    console.log(data.published);
     return (dispatch) => {
         return axios.put(`${url}/${id}`, {
             title: data.title,

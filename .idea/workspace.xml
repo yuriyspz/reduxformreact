@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="548fc5ef-13af-465b-9a71-f8c65ff3d198" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/addBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/bookList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/singleBook.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fieldComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/fieldComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/formComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/formComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +85,7 @@
       <workItem from="1585402795670" duration="8772000" />
       <workItem from="1585675577151" duration="6565000" />
       <workItem from="1585721707277" duration="12000" />
+      <workItem from="1585854195770" duration="1310000" />
     </task>
     <servers />
   </component>
