@@ -13,6 +13,7 @@ const InputWrap = styled.div`
     width: 100%;
     margin-bottom: 20px;
     text-align: left;
+    position: relative;
 `;
 const Label = styled.label`
     font-size: 16px;
@@ -32,6 +33,7 @@ const ErrorField = styled.div`
     color: red;
     font-size: 12px;
     text-align: left;
+    position: absolute;
 `;
 const WarningField = styled.div`
     color: orange;

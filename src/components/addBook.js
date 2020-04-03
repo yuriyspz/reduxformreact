@@ -4,19 +4,12 @@ import {createBook} from "../actions";
 import {Field, reduxForm} from 'redux-form';
 import fieldComponent from "./fieldComponent";
 import styled from 'styled-components';
+import validate from "./validate";
 
 class AddBook extends React.Component {
-    handleSubmit = (values) => {
-        //e.preventDefault();
-        console.log(values);
-        //this.props.onAddBook(value);
-        //this.handleReset();
-    };
-
-    componentDidMount() {
-    }
 
     render() {
+
         const {handleSubmit, reset} = this.props;
         const submit = (values) => {
             this.props.onAddBook(values);
@@ -83,6 +76,7 @@ const ButtonSubmit = styled.button`
     color: #fff;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 15px;
 `;
 
 const mapDispatchToProps = (dispatch) => {
@@ -95,7 +89,8 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default reduxForm({
-    form: "addBookForm"
+    form: "addBookForm",
+    validate,
 })(
     connect(
         null,
