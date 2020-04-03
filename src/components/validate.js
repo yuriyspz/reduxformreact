@@ -20,11 +20,10 @@ const validate = values => {
 
     if (!values.published) {
         errors.published = 'Required'
-    } else if (values.published.length !== 4) {
-        console.log('123')
+    } else if (isNaN(values.published)) {
+        errors.published = 'Must be number'
+    } else if (values.published.length !== 4){
         errors.published = 'Must be 4 character long'
-    } else {
-        console.log('312')
     }
 
     return errors
